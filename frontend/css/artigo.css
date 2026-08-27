@@ -1,0 +1,237 @@
+.categoriaArtigo h1{
+    font-size:55px;
+    font-weight:900;
+}
+
+.categoriaCfcs{
+    color:#00ff24;
+}
+
+.categoriaMobilidade{
+    color:#eaff00;
+}
+
+.categoriaConscientizacao{
+    color:#ff0000;
+}
+
+.paginaArtigo{
+    position:relative;
+
+    width:95%;
+    max-width:1600px;
+
+    min-height:900px;
+
+    margin:20px auto;
+
+    background:white;
+}
+
+
+/* Categoria */
+
+.categoriaArtigo{
+    height:85px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 50px;
+
+    background:#101547;
+}
+
+.categoriaArtigo h1{
+    font-size:55px;
+    font-weight:900;
+}
+
+
+/* Conteúdo */
+
+.conteudoArtigo{
+    position:relative;
+
+    padding:40px 65px 25px;
+}
+
+.conteudoArtigo h2{
+    color:#555;
+
+    font-size:42px;
+    font-weight:900;
+
+    line-height:1.15;
+
+    margin-bottom:12px;
+
+    border-bottom:2px solid #9ca3c7;
+
+    padding-bottom:8px;
+}
+
+
+/* Subtítulo */
+
+.subtituloArtigo{
+    font-size:19px;
+    line-height:1.3;
+
+    margin-bottom:15px;
+}
+
+
+/* Informações */
+
+.informacoesArtigo{
+    display:flex;
+    align-items:center;
+
+    gap:15px;
+
+    margin-bottom:25px;
+
+    color:#aaa;
+
+    font-size:14px;
+}
+
+.informacoesArtigo span{
+    background:#202020;
+
+    padding:5px 8px;
+}
+
+
+/* Ouvir */
+
+.ouvirArtigo{
+    margin-left:auto;
+
+    width:260px;
+    height:48px;
+
+    border:none;
+
+    background:#202020;
+    color:white;
+
+    font-size:16px;
+}
+
+
+/* Texto */
+
+.conteudoArtigo p{
+    font-size:21px;
+
+    line-height:1.4;
+
+    margin-bottom:15px;
+}
+
+
+/* Texto com imagem */
+
+.conteudoComImagem{
+    display:flex;
+    align-items:center;
+
+    gap:60px;
+
+    width:85%;
+
+    margin:10px auto 25px;
+}
+
+.textoArtigo{
+    flex:1;
+}
+
+.conteudoComImagem img{
+    width:450px;
+    height:290px;
+
+    object-fit:cover;
+
+    border-radius:6px;
+}
+
+
+/* Comentários */
+
+.comentarios{
+    display:block;
+
+    width:max-content;
+
+    margin:20px auto 0;
+
+    color:#555;
+
+    font-size:21px;
+    font-weight:bold;
+
+    text-decoration:underline;
+}
+
+
+/* Próximo artigo */
+
+.proximoArtigo{
+    position:absolute;
+
+    right:20px;
+    bottom:20px;
+
+    width:60px;
+    height:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:4px solid black;
+    border-radius:50%;
+
+    background:white;
+    color:black;
+
+    font-size:30px;
+    font-weight:bold;
+}
+
+.conteudoArtigoImagem{
+    width:90%;
+
+    margin:20px auto;
+}
+
+.conteudoArtigoImagem img{
+    width:450px;
+    height:290px;
+
+    object-fit:cover;
+
+    border-radius:6px;
+
+    float:right;
+
+    margin:0 0 25px 40px;
+}
+
+.conteudoArtigoImagem p{
+    font-size:21px;
+
+    line-height:1.4;
+
+    margin-bottom:20px;
+}
+
+.conteudoArtigoImagem::after{
+    content:"";
+
+    display:block;
+    clear:both;
+}
