@@ -1,0 +1,158 @@
+/* Página Maio Amarelo */
+
+body{
+    overflow-y:hidden;
+}
+
+.maioAmarelo{
+    width:95%;
+    max-width:1600px;
+
+    margin:30px auto;
+
+    background:white;
+}
+
+
+/* Banner */
+
+.bannerCampanha{
+    width:100%;
+    height:380px;
+
+    background-image:url("../assets/imagens/BannerMaioAmarelo.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+
+/* Texto */
+
+.descricaoCampanha{
+    padding:25px 30px;
+}
+
+.descricaoCampanha p{
+    font-size:20px;
+    line-height:1.5;
+    text-align:justify;
+}
+
+
+/* Cards */
+
+.cardsCampanha{
+    display:flex;
+    gap:15px;
+
+    padding:10px 30px 35px;
+}
+
+.cardCampanha{
+    position:relative;
+
+    flex:1;
+
+    min-height:360px;
+
+    background:#4a4a4a;
+    color:white;
+
+    padding:30px;
+
+    border-radius:6px;
+}
+
+.cardCampanha h3{
+    color:#ffff00;
+
+    font-size:20px;
+
+    margin-bottom:15px;
+}
+
+.cardCampanha p{
+    font-size:18px;
+    line-height:1.5;
+}
+
+
+/* Botão próximo */
+
+.cardObjetivo{
+    padding-bottom:80px;
+}
+
+.proximo{
+    position:absolute;
+
+    right:18px;
+    bottom:18px;
+
+    width:55px;
+    height:55px;
+
+    border:4px solid black;
+    border-radius:50%;
+
+    background:#777;
+    color:black;
+
+    font-size:30px;
+    font-weight:bold;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+
+/* Responsividade */
+
+@media(max-width:900px){
+
+    .cardsCampanha{
+        flex-wrap:wrap;
+    }
+
+    .cardCampanha{
+        flex:1 1 45%;
+    }
+
+}
+
+
+@media(max-width:600px){
+
+    .maioAmarelo{
+        width:95%;
+        margin:15px auto;
+    }
+
+    .bannerCampanha{
+        height:220px;
+    }
+
+    .cardsCampanha{
+        flex-direction:column;
+        padding:10px 15px 25px;
+    }
+
+    .cardCampanha{
+        min-height:auto;
+    }
+
+    .descricaoCampanha{
+        padding:20px;
+    }
+
+    .descricaoCampanha p{
+        font-size:16px;
+    }
+
+    .cardCampanha p{
+        font-size:16px;
+    }
+
+}
