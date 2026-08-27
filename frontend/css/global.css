@@ -1,30 +1,30 @@
 /* Reset */
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Configurações gerais */
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background:#f4f4f4;
+    background: #f4f4f4;
 }
 
 /* Header */
-header{
-    background:#232A65;
-    color:white;
-    height:80px;
+header {
+    background: #232A65;
+    color: white;
+    height: 80px;
 
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    padding:0 30px;
+    padding: 0 30px;
 }
 
-.logo{
+.logo {
     width: 280px;
     height: 160px;
     background-image: url("../assets/logos/LogoSPI.png");
@@ -33,20 +33,20 @@ header{
     background-size: contain;
 }
 
-.logo h2{
-    font-size:32px;
+.logo h2 {
+    font-size: 32px;
 }
 
-.logo span{
-    font-size:12px;
+.logo span {
+    font-size: 12px;
 }
 
-.titulo{
-    font-style:italic;
-    font-size:24px;
+.titulo {
+    font-style: italic;
+    font-size: 24px;
 }
 
 /* Botões genéricos */
-button{
-    cursor:pointer;
+button {
+    cursor: pointer;
 }

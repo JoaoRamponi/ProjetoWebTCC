@@ -1,158 +1,158 @@
 /* Página Maio Amarelo */
 
-body{
-    overflow-y:hidden;
+body {
+    overflow-y: hidden;
 }
 
-.maioAmarelo{
-    width:95%;
-    max-width:1600px;
+.maioAmarelo {
+    width: 95%;
+    max-width: 1600px;
 
-    margin:30px auto;
+    margin: 30px auto;
 
-    background:white;
+    background: white;
 }
 
 
 /* Banner */
 
-.bannerCampanha{
-    width:100%;
-    height:380px;
+.bannerCampanha {
+    width: 100%;
+    height: 380px;
 
-    background-image:url("../assets/imagens/BannerMaioAmarelo.png");
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
+    background-image: url("../assets/imagens/BannerMaioAmarelo.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
 /* Texto */
 
-.descricaoCampanha{
-    padding:25px 30px;
+.descricaoCampanha {
+    padding: 25px 30px;
 }
 
-.descricaoCampanha p{
-    font-size:20px;
-    line-height:1.5;
-    text-align:justify;
+.descricaoCampanha p {
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: justify;
 }
 
 
 /* Cards */
 
-.cardsCampanha{
-    display:flex;
-    gap:15px;
+.cardsCampanha {
+    display: flex;
+    gap: 15px;
 
-    padding:10px 30px 35px;
+    padding: 10px 30px 35px;
 }
 
-.cardCampanha{
-    position:relative;
+.cardCampanha {
+    position: relative;
 
-    flex:1;
+    flex: 1;
 
-    min-height:360px;
+    min-height: 360px;
 
-    background:#4a4a4a;
-    color:white;
+    background: #4a4a4a;
+    color: white;
 
-    padding:30px;
+    padding: 30px;
 
-    border-radius:6px;
+    border-radius: 6px;
 }
 
-.cardCampanha h3{
-    color:#ffff00;
+.cardCampanha h3 {
+    color: #ffff00;
 
-    font-size:20px;
+    font-size: 20px;
 
-    margin-bottom:15px;
+    margin-bottom: 15px;
 }
 
-.cardCampanha p{
-    font-size:18px;
-    line-height:1.5;
+.cardCampanha p {
+    font-size: 18px;
+    line-height: 1.5;
 }
 
 
 /* Botão próximo */
 
-.cardObjetivo{
-    padding-bottom:80px;
+.cardObjetivo {
+    padding-bottom: 80px;
 }
 
-.proximo{
-    position:absolute;
+.proximo {
+    position: absolute;
 
-    right:18px;
-    bottom:18px;
+    right: 18px;
+    bottom: 18px;
 
-    width:55px;
-    height:55px;
+    width: 55px;
+    height: 55px;
 
-    border:4px solid black;
-    border-radius:50%;
+    border: 4px solid black;
+    border-radius: 50%;
 
-    background:#777;
-    color:black;
+    background: #777;
+    color: black;
 
-    font-size:30px;
-    font-weight:bold;
+    font-size: 30px;
+    font-weight: bold;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 /* Responsividade */
 
-@media(max-width:900px){
+@media(max-width:900px) {
 
-    .cardsCampanha{
-        flex-wrap:wrap;
+    .cardsCampanha {
+        flex-wrap: wrap;
     }
 
-    .cardCampanha{
-        flex:1 1 45%;
+    .cardCampanha {
+        flex: 1 1 45%;
     }
 
 }
 
 
-@media(max-width:600px){
+@media(max-width:600px) {
 
-    .maioAmarelo{
-        width:95%;
-        margin:15px auto;
+    .maioAmarelo {
+        width: 95%;
+        margin: 15px auto;
     }
 
-    .bannerCampanha{
-        height:220px;
+    .bannerCampanha {
+        height: 220px;
     }
 
-    .cardsCampanha{
-        flex-direction:column;
-        padding:10px 15px 25px;
+    .cardsCampanha {
+        flex-direction: column;
+        padding: 10px 15px 25px;
     }
 
-    .cardCampanha{
-        min-height:auto;
+    .cardCampanha {
+        min-height: auto;
     }
 
-    .descricaoCampanha{
-        padding:20px;
+    .descricaoCampanha {
+        padding: 20px;
     }
 
-    .descricaoCampanha p{
-        font-size:16px;
+    .descricaoCampanha p {
+        font-size: 16px;
     }
 
-    .cardCampanha p{
-        font-size:16px;
+    .cardCampanha p {
+        font-size: 16px;
     }
 
 }
