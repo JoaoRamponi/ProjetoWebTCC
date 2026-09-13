@@ -1,22 +1,18 @@
-/* Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Configurações gerais */
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: white;
 }
 
-/* Header */
 header {
     background: #232A65;
     color: white;
     height: 80px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +42,6 @@ header {
     font-size: 24px;
 }
 
-/* Botões genéricos */
 button {
     cursor: pointer;
 }

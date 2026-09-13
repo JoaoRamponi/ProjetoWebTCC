@@ -1,4 +1,3 @@
-/* Página */
 body {
     width: 100%;
     height: 100%;
@@ -8,56 +7,36 @@ body {
 
 .paginaNoticias {
     position: relative;
-
     width: 95%;
     max-width: 1600px;
-
     min-height: 900px;
-
     margin: 25px auto;
-
     background: white;
-
     padding-bottom: 60px;
 }
 
-
-/* Cabeçalho */
-
 .cabecalhoNoticias {
     height: 80px;
-
     display: flex;
     align-items: center;
-
     width: 100vw;
-
     margin-left: calc(50% - 50vw);
-
     padding: 0 45px;
-
     background: #cfcfcf;
-
     box-sizing: border-box;
 }
 
 .cabecalhoNoticias h1 {
     color: #14194d;
-
     font-size: 44px;
     font-weight: 900;
-
     margin-right: 18px;
 }
 
 .cabecalhoNoticias a {
     font-size: 20px;
-
     text-decoration: none;
 }
-
-
-/* Cores do Veja + */
 
 .vermelho {
     color: red;
@@ -71,119 +50,74 @@ body {
     color: #d4b000;
 }
 
-
-/* Grid */
-
 .gridNoticias {
     width: 82%;
-
     margin: 50px auto;
-
     display: grid;
-
     grid-template-columns: repeat(3, 1fr);
-
     column-gap: 65px;
     row-gap: 50px;
 }
 
-
-/* Card */
-
 .cardNoticia {
     display: flex;
     flex-direction: column;
-
     align-items: flex-start;
 }
 
 .cardNoticia img {
     width: 100%;
     height: 190px;
-
     object-fit: cover;
-
     border-radius: 9px;
-
     margin-bottom: 7px;
 }
 
-
-/* Categoria */
-
 .cardNoticia h3 {
     color: #11143f;
-
     font-size: 19px;
     font-weight: 900;
-
     margin-bottom: 4px;
 }
 
-
-/* Título da notícia */
-
 .cardNoticia h2 {
     color: black;
-
     font-size: 23px;
     font-weight: 900;
-
     line-height: 1.08;
-
     margin-bottom: 18px;
 }
 
-
-/* Redes */
-
 .redes {
     display: flex;
-
     gap: 12px;
-
     margin-top: auto;
 }
 
 .redes span {
     color: black;
-
     font-size: 16px;
     font-weight: bold;
-
     cursor: pointer;
 }
-
-
-/* Botão próximo */
 
 .proximaPagina {
     position: absolute;
-
     right: 45px;
     bottom: 40px;
-
     width: 60px;
     height: 60px;
-
     display: flex;
     align-items: center;
     justify-content: center;
-
     border: 4px solid black;
     border-radius: 50%;
-
     background: white;
     color: black;
-
     font-size: 30px;
     font-weight: bold;
-
     cursor: pointer;
 }
-
-
-/* Responsividade */
 
 @media(max-width:1000px) {
 
@@ -193,9 +127,7 @@ body {
 
     .gridNoticias {
         width: 88%;
-
         grid-template-columns: repeat(2, 1fr);
-
         column-gap: 45px;
         row-gap: 40px;
     }
@@ -231,11 +163,8 @@ body {
 
     .gridNoticias {
         width: 90%;
-
         margin: 30px auto;
-
         grid-template-columns: 1fr;
-
         gap: 35px;
     }
 

@@ -17,28 +17,23 @@ function ouvirArtigo() {
     }
 
 
-    // Título do artigo
     const titulo = document.querySelector(".conteudoArtigo h2");
 
-    // Parágrafos do artigo
     const paragrafos = document.querySelectorAll(".conteudoArtigo p");
 
     let texto = "";
 
 
-    // Adiciona o título primeiro
     if (titulo) {
         texto += titulo.innerText + ". ";
     }
 
 
-    // Depois adiciona os parágrafos
     paragrafos.forEach((paragrafo) => {
         texto += paragrafo.innerText + " ";
     });
 
 
-    // Cria a fala
     fala = new SpeechSynthesisUtterance(texto);
 
     fala.lang = "pt-BR";
@@ -47,7 +42,6 @@ function ouvirArtigo() {
     fala.volume = 1;
 
 
-    // Procura uma voz em português
     const vozes = speechSynthesis.getVoices();
 
     const vozGoogle = vozes.find((voz) =>
@@ -67,39 +61,28 @@ function ouvirArtigo() {
     }
 
 
-    // Quando começar
     fala.onstart = function() {
-
         falando = true;
-
         botao.innerHTML = "■ &nbsp; PARAR";
     };
 
 
-    // Quando terminar
     fala.onend = function() {
-
         falando = false;
-
         botao.innerHTML = "▷ &nbsp; OUVIR";
     };
 
 
-    // Caso aconteça algum erro
     fala.onerror = function() {
-
         falando = false;
-
         botao.innerHTML = "▷ &nbsp; OUVIR";
     };
 
 
-    // Começa a leitura
     speechSynthesis.speak(fala);
 }
 
 
-// Carrega as vozes do navegador
 speechSynthesis.onvoiceschanged = function() {
     speechSynthesis.getVoices();
 };

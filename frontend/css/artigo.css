@@ -1,10 +1,6 @@
-/* Página */
-
-html,
 body{
     width:100%;
     min-height:100%;
-
     margin:0;
     padding:0;
 }
@@ -15,27 +11,18 @@ body{
 
 .paginaArtigo{
     position:relative;
-
     width:100%;
     min-height:100vh;
-
     margin:0;
-
     background:white;
 }
-
-
-/* Categoria */
 
 .categoriaArtigo{
     width:100%;
     height:85px;
-
     display:flex;
     align-items:center;
-
     padding:0 5%;
-
     background:#101547;
 }
 
@@ -43,9 +30,6 @@ body{
     font-size:55px;
     font-weight:900;
 }
-
-
-/* Cores das categorias */
 
 .categoriaCfcs{
     color:#00ff24;
@@ -59,106 +43,66 @@ body{
     color:#ff0000;
 }
 
-
-/* Conteúdo */
-
 .conteudoArtigo{
     position:relative;
-
     width:90%;
     max-width:1600px;
-
     margin:0 auto;
-
     padding:35px 0 30px;
 }
 
 .conteudoArtigo h2{
     color:#555;
-
     font-size:42px;
     font-weight:900;
-
     line-height:1.15;
-
     margin-bottom:12px;
-
     border-bottom:2px solid #9ca3c7;
-
     padding-bottom:8px;
 }
-
-
-/* Subtítulo */
 
 .subtituloArtigo{
     font-size:19px;
     line-height:1.3;
-
     margin-bottom:15px;
 }
-
-
-/* Informações */
 
 .informacoesArtigo{
     display:flex;
     align-items:center;
-
     gap:15px;
-
     margin-bottom:25px;
-
     color:#aaa;
-
     font-size:14px;
 }
 
 .informacoesArtigo span{
     background:#202020;
-
     padding:5px 8px;
 }
 
 
-/* Ouvir */
-
 .ouvirArtigo{
     margin-left:auto;
-
     width:260px;
     height:48px;
-
     border:none;
-
     background:#202020;
     color:white;
-
     font-size:16px;
 }
 
-
-/* Texto */
-
 .conteudoArtigo p{
     font-size:21px;
-
     line-height:1.4;
-
     margin-bottom:15px;
 }
-
-
-/* Texto com imagem */
 
 .conteudoComImagem{
     display:flex;
     align-items:center;
-
     gap:60px;
-
     width:90%;
-
     margin:10px auto 25px;
 }
 
@@ -169,97 +113,63 @@ body{
 .conteudoComImagem img{
     width:450px;
     height:290px;
-
     object-fit:cover;
-
     border-radius:6px;
 }
 
-
-/* Texto com imagem flutuante */
-
 .conteudoArtigoImagem{
     width:90%;
-
     margin:20px auto;
 }
 
 .conteudoArtigoImagem img{
     width:450px;
     height:290px;
-
     object-fit:cover;
-
     border-radius:6px;
-
     float:right;
-
     margin:0 0 25px 40px;
 }
 
 .conteudoArtigoImagem p{
     font-size:21px;
-
     line-height:1.4;
-
     margin-bottom:20px;
 }
 
 .conteudoArtigoImagem::after{
     content:"";
-
     display:block;
     clear:both;
 }
 
-
-/* Comentários */
-
 .comentarios{
     display:block;
-
     width:max-content;
-
     margin:20px auto 0;
-
     color:#555;
-
     font-size:21px;
     font-weight:bold;
-
     text-decoration:underline;
 }
 
-
-/* Próximo artigo */
-
 .proximoArtigo{
     position:absolute;
-
     right:25px;
     bottom:20px;
-
     width:60px;
     height:60px;
-
     display:flex;
     justify-content:center;
     align-items:center;
-
     border:4px solid black;
     border-radius:50%;
-
     background:white;
     color:black;
-
     font-size:30px;
     font-weight:bold;
-
     cursor:pointer;
 }
-
-
-/* Tela média */
 
 @media(max-width:1000px){
 
@@ -277,7 +187,6 @@ body{
 
     .conteudoComImagem{
         width:100%;
-
         gap:30px;
     }
 
@@ -298,13 +207,10 @@ body{
 }
 
 
-/* Celular */
-
 @media(max-width:650px){
 
     .categoriaArtigo{
         height:70px;
-
         padding:0 20px;
     }
 
@@ -346,9 +252,7 @@ body{
     .conteudoArtigoImagem img{
         width:100%;
         height:auto;
-
         float:none;
-
         margin:0 0 20px 0;
     }
 
@@ -360,10 +264,8 @@ body{
 
     .proximoArtigo{
         position:relative;
-
         right:auto;
         bottom:auto;
-
         margin:25px 0 0 auto;
     }
 
