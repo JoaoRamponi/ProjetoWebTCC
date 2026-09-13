@@ -1,7 +1,51 @@
+/* Página */
+
+html,
+body{
+    width:100%;
+    min-height:100%;
+
+    margin:0;
+    padding:0;
+}
+
+body{
+    background:white;
+}
+
+.paginaArtigo{
+    position:relative;
+
+    width:100%;
+    min-height:100vh;
+
+    margin:0;
+
+    background:white;
+}
+
+
+/* Categoria */
+
+.categoriaArtigo{
+    width:100%;
+    height:85px;
+
+    display:flex;
+    align-items:center;
+
+    padding:0 5%;
+
+    background:#101547;
+}
+
 .categoriaArtigo h1{
     font-size:55px;
     font-weight:900;
 }
+
+
+/* Cores das categorias */
 
 .categoriaCfcs{
     color:#00ff24;
@@ -15,45 +59,18 @@
     color:#ff0000;
 }
 
-.paginaArtigo{
-    position:relative;
-
-    width:95%;
-    max-width:1600px;
-
-    min-height:900px;
-
-    margin:20px auto;
-
-    background:white;
-}
-
-
-/* Categoria */
-
-.categoriaArtigo{
-    height:85px;
-
-    display:flex;
-    align-items:center;
-
-    padding:0 50px;
-
-    background:#101547;
-}
-
-.categoriaArtigo h1{
-    font-size:55px;
-    font-weight:900;
-}
-
 
 /* Conteúdo */
 
 .conteudoArtigo{
     position:relative;
 
-    padding:40px 65px 25px;
+    width:90%;
+    max-width:1600px;
+
+    margin:0 auto;
+
+    padding:35px 0 30px;
 }
 
 .conteudoArtigo h2{
@@ -140,7 +157,7 @@
 
     gap:60px;
 
-    width:85%;
+    width:90%;
 
     margin:10px auto 25px;
 }
@@ -159,48 +176,7 @@
 }
 
 
-/* Comentários */
-
-.comentarios{
-    display:block;
-
-    width:max-content;
-
-    margin:20px auto 0;
-
-    color:#555;
-
-    font-size:21px;
-    font-weight:bold;
-
-    text-decoration:underline;
-}
-
-
-/* Próximo artigo */
-
-.proximoArtigo{
-    position:absolute;
-
-    right:20px;
-    bottom:20px;
-
-    width:60px;
-    height:60px;
-
-    display:flex;
-    justify-content:center;
-    align-items:center;
-
-    border:4px solid black;
-    border-radius:50%;
-
-    background:white;
-    color:black;
-
-    font-size:30px;
-    font-weight:bold;
-}
+/* Texto com imagem flutuante */
 
 .conteudoArtigoImagem{
     width:90%;
@@ -234,4 +210,161 @@
 
     display:block;
     clear:both;
+}
+
+
+/* Comentários */
+
+.comentarios{
+    display:block;
+
+    width:max-content;
+
+    margin:20px auto 0;
+
+    color:#555;
+
+    font-size:21px;
+    font-weight:bold;
+
+    text-decoration:underline;
+}
+
+
+/* Próximo artigo */
+
+.proximoArtigo{
+    position:absolute;
+
+    right:25px;
+    bottom:20px;
+
+    width:60px;
+    height:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border:4px solid black;
+    border-radius:50%;
+
+    background:white;
+    color:black;
+
+    font-size:30px;
+    font-weight:bold;
+
+    cursor:pointer;
+}
+
+
+/* Tela média */
+
+@media(max-width:1000px){
+
+    .categoriaArtigo h1{
+        font-size:42px;
+    }
+
+    .conteudoArtigo{
+        width:92%;
+    }
+
+    .conteudoArtigo h2{
+        font-size:34px;
+    }
+
+    .conteudoComImagem{
+        width:100%;
+
+        gap:30px;
+    }
+
+    .conteudoComImagem img{
+        width:380px;
+        height:250px;
+    }
+
+    .conteudoArtigoImagem{
+        width:100%;
+    }
+
+    .conteudoArtigoImagem img{
+        width:380px;
+        height:250px;
+    }
+
+}
+
+
+/* Celular */
+
+@media(max-width:650px){
+
+    .categoriaArtigo{
+        height:70px;
+
+        padding:0 20px;
+    }
+
+    .categoriaArtigo h1{
+        font-size:30px;
+    }
+
+    .conteudoArtigo{
+        width:90%;
+
+        padding:25px 0;
+    }
+
+    .conteudoArtigo h2{
+        font-size:26px;
+    }
+
+    .informacoesArtigo{
+        flex-wrap:wrap;
+    }
+
+    .ouvirArtigo{
+        margin-left:0;
+
+        width:100%;
+    }
+
+    .conteudoComImagem{
+        flex-direction:column;
+
+        width:100%;
+    }
+
+    .conteudoComImagem img{
+        width:100%;
+        height:auto;
+    }
+
+    .conteudoArtigoImagem img{
+        width:100%;
+        height:auto;
+
+        float:none;
+
+        margin:0 0 20px 0;
+    }
+
+    .comentarios{
+        width:auto;
+
+        text-align:center;
+    }
+
+    .proximoArtigo{
+        position:relative;
+
+        right:auto;
+        bottom:auto;
+
+        margin:25px 0 0 auto;
+    }
+
 }
