@@ -45,3 +45,11 @@ header {
 button {
     cursor: pointer;
 }
+
+.espacoDoisBr{
+    height:2em;
+}
+
+.espacoTresBr{
+    height:3em;
+}

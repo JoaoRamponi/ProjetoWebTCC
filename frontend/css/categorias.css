@@ -5,9 +5,7 @@ body{
 .paginaCategorias{
     width:100%;
     min-height:100vh;
-
     padding:20px 25px 35px;
-
     background:#efefef;
 }
 
@@ -17,76 +15,58 @@ body{
 
 .topoCategorias h1{
     color:#14194d;
-
     font-size:64px;
     font-weight:900;
-
     line-height:1;
 }
 
 .gridCategorias{
     width:92%;
     max-width:1450px;
-
     margin:0 auto;
-
     display:grid;
     grid-template-columns:repeat(2, 1fr);
-
     column-gap:28px;
     row-gap:32px;
 }
 
 .cardCategoria{
     min-height:275px;
-
     padding:36px 28px 28px;
-
     background:#f9f9f9;
-
     border:3px solid #d4d4d4;
     border-radius:22px;
-
     display:flex;
     flex-direction:column;
     align-items:flex-start;
-
-     transition:0.3s;
+    transition:0.3s;
     cursor:pointer;
 }
 
 .cardCategoria:hover{
     background:#1794ff;
     border-color:#1794ff;
-
     transform:translateY(-5px);
 }
 
 .cardCategoria img{
     width:72px;
     height:72px;
-
     object-fit:contain;
-
     margin-bottom:22px;
 }
 
 .cardCategoria h2{
     color:black;
-
     font-size:40px;
     font-weight:900;
-
     line-height:1.05;
-
     margin-bottom:12px;
 }
 
 .cardCategoria p{
     color:#222;
-
     font-size:21px;
     line-height:1.2;
-
     max-width:90%;
 }
