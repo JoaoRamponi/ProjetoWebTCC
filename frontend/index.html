@@ -1,16 +1,42 @@
 <!DOCTYPE html>
 <html lang="PT-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/menu.css">
     <title>SPI - Inicio</title>
 </head>
+
 <body>
 
+    <script src="js/menu.js"></script>
+
+    <div class="fundoMenu" id="fundoMenu" onclick="fecharMenu()"></div>
+
+    <aside class="menuLateral" id="menuLateral">
+
+        <button class="fecharMenu" onclick="fecharMenu()">
+            ×
+        </button>
+
+        <div class="logoMenu"></div>
+
+        <nav class="opcoesMenu">
+            <a href="blog.html">Blog</a>
+            <a href="faqParceiros.html">Parceiros</a>
+            <a href="maioAmarelo.html">Campanhas</a>
+            <a href="produto.html">Produto</a>
+            <a href="faqParceiros.html">Faq</a>
+            <a href="especialistas.html">Especialistas</a>
+        </nav>
+
+    </aside>
+
     <header>
-        <div class="logo"></div>
+        <div class="logo" onclick="abrirMenu()"></div>
 
         <div class="titulo">
             Senior Pass Intelligence
@@ -29,25 +55,25 @@
         </div>
 
         <div class="item">
-          <div class="iconeSom"></div>
+            <div class="iconeSom"></div>
             <p>
                 Detecção e Monitoramento Inteligente:
                 O sistema utiliza sensores RFID.
             </p>
         </div>
-      
-        
+
+
         <div class="item">
-          <div class="iconeSemaforo"></div>
+            <div class="iconeSemaforo"></div>
             <p>
                 Extensão de tempo dinâmica,
                 juntamente com o sensor RFID detecta
                 pedestres com mobilidade reduzida.
-            </p>  
+            </p>
         </div>
-    
-        <div class="item">       
-          <div class="iconeOuvido"></div>
+
+        <div class="item">
+            <div class="iconeOuvido"></div>
             <p>
                 Além do tempo extra, o SPI oferece sinais
                 sonoros adaptativos para deficientes visuais,
@@ -58,4 +84,5 @@
     </section>
 
 </body>
+
 </html>

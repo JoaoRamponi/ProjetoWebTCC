@@ -1,0 +1,139 @@
+.botaoMenu{
+    position:fixed;
+    top:20px;
+    left:20px;
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    border-radius:8px;
+    background:#11164c;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    cursor:pointer;
+    z-index:900;
+}
+
+.fundoMenu{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0, 0, 0, 0.45);
+    opacity:0;
+    visibility:hidden;
+    transition:0.3s;
+    z-index:950;
+}
+
+.fundoMenu.ativo{
+    opacity:1;
+    visibility:visible;
+}
+
+.menuLateral{
+    position:fixed;
+    top:0;
+    left:-330px;
+    width:320px;
+    height:100vh;
+    padding:20px;
+    background:#10164d;
+    border-right:7px solid #ffff00;
+    box-shadow:5px 0 12px rgba(0, 0, 0, 0.3);
+    transition:left 0.35s ease;
+    z-index:1000;
+}
+
+.menuLateral.ativo{
+    left:0;
+}
+
+.logoMenu{
+    width:170px;
+    height:90px;
+    margin:10px auto 20px;
+    background-image:url("../assets/logos/LogoSPI.png");
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:contain;
+}
+
+.opcoesMenu{
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+.opcoesMenu a{
+    width:100%;
+    padding:14px 10px;
+    background:#1c2767;
+    color:white;
+    text-align:center;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:900;
+    transition:0.25s;
+    cursor:pointer;
+}
+
+.opcoesMenu a:hover{
+    background:#303d89;
+    transform:translateX(5px);
+}
+
+.fecharMenu{
+    position:absolute;
+    top:10px;
+    right:10px;
+    width:40px;
+    height:40px;
+    border:none;
+    background:transparent;
+    color:white;
+    font-size:34px;
+    cursor:pointer;
+}
+
+@media(max-width:500px){
+
+    .menuLateral{
+        width:280px;
+        left:-290px;
+    }
+
+    .logoMenu{
+        width:145px;
+        height:80px;
+    }
+
+    .opcoesMenu a{
+        font-size:17px;
+        padding:12px;
+    }
+
+    .botaoMenu{
+    position:fixed;
+    top:20px;
+    left:20px;
+    width:50px;
+    height:50px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:none;
+    border-radius:8px;
+    background:#11164c;
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    cursor:pointer;
+    z-index:900;
+    }
+
+}
