@@ -118,7 +118,6 @@ body{
     cursor:pointer;
 }
 
-
 .faixaAzul{
     width:100%;
     height:45.5px;
@@ -160,7 +159,7 @@ body{
     font-weight:900;
 }
 
-.chamadaFinal::before{
+/* .chamadaFinal::before{
     content:"";
     position:absolute;
     left:-15px;
@@ -182,7 +181,7 @@ body{
     background-image:radial-gradient(red 3px, transparent 4px);
     background-size:18px 18px;
     transform:rotate(-10deg);
-}
+} */
 
 @media(max-width:1000px){
 

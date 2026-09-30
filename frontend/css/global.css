@@ -38,6 +38,7 @@ header {
 }
 
 .titulo {
+    font-family: "Dancing Script", cursive;
     font-style: italic;
     font-size: 24px;
 }
