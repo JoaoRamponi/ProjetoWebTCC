@@ -1,124 +1,152 @@
-body {
-    overflow-y: hidden;
+body{
+    width:100%;
+    min-height:100%;
+
+    margin:0;
+    padding:0;
 }
 
-.maioAmarelo {
-    width: 95%;
-    max-width: 1600px;
-    margin: 30px auto;
-    background: white;
+body{
+    background:white;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 
-.bannerCampanha {
-    width: 100%;
-    height: 380px;
-    background-image: url("../assets/imagens/BannerMaioAmarelo.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+.maioAmarelo{
+    width:100%;
+    min-height:100vh;
+    margin:0;
+    background:white;
 }
 
-.descricaoCampanha {
-    padding: 25px 30px;
+.bannerCampanha{
+    width:100%;
+    height:360px;
+    background-image:url("../assets/imagens/BannerMaioAmarelo.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
 }
 
-.descricaoCampanha p {
-    font-size: 20px;
-    line-height: 1.5;
-    text-align: justify;
+.descricaoCampanha{
+    width:94%;
+    margin:0 auto;
+    padding:18px 0;
 }
 
-.cardsCampanha {
-    display: flex;
-    gap: 15px;
-    padding: 10px 30px 35px;
+.descricaoCampanha p{
+    font-size:18px;
+    line-height:1.4;
+    text-align:justify;
 }
 
-.cardCampanha {
-    position: relative;
-    flex: 1;
-    min-height: 360px;
-    background: #4a4a4a;
-    color: white;
-    padding: 30px;
-    border-radius: 6px;
+.cardsCampanha{
+    width:94%;
+    margin:0 auto;
+    display:flex;
+    gap:14px;
+    padding:10px 0 25px;
 }
 
-.cardCampanha h3 {
-    color: #ffff00;
-    font-size: 20px;
-    margin-bottom: 15px;
+.cardCampanha{
+    position:relative;
+    flex:1;
+    min-height:300px;
+    padding:24px;
+    background:#4a4a4a;
+    color:white;
+    border-radius:6px;
 }
 
-.cardCampanha p {
-    font-size: 18px;
-    line-height: 1.5;
+.cardCampanha h3{
+    color:#ffff00;
+    font-size:19px;
+    margin-bottom:12px;
 }
 
-.cardObjetivo {
-    padding-bottom: 80px;
+.cardCampanha p{
+    font-size:17px;
+    line-height:1.4;
 }
 
-.proximo {
-    position: absolute;
-    right: 18px;
-    bottom: 18px;
-    width: 55px;
-    height: 55px;
-    border: 4px solid black;
-    border-radius: 50%;
-    background: #777;
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.cardObjetivo{
+    padding-bottom:75px;
 }
 
-@media(max-width:900px) {
+.proximo{
+    position:absolute;
+    right:16px;
+    bottom:16px;
+    width:52px;
+    height:52px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:4px solid black;
+    border-radius:50%;
+    background:#777;
+    color:black;
+    font-size:28px;
+    font-weight:bold;
+    cursor:pointer;
+}
 
-    .cardsCampanha {
-        flex-wrap: wrap;
+@media(max-width:900px){
+
+    body{
+        overflow-y:auto;
     }
 
-    .cardCampanha {
-        flex: 1 1 45%;
+    .bannerCampanha{
+        height:300px;
+    }
+
+    .cardsCampanha{
+        flex-wrap:wrap;
+    }
+
+    .cardCampanha{
+        flex:1 1 45%;
     }
 
 }
 
+@media(max-width:600px){
 
-@media(max-width:600px) {
-
-    .maioAmarelo {
-        width: 95%;
-        margin: 15px auto;
+    body{
+        overflow-y:auto;
     }
 
-    .bannerCampanha {
-        height: 220px;
+    .bannerCampanha{
+        height:220px;
     }
 
-    .cardsCampanha {
-        flex-direction: column;
-        padding: 10px 15px 25px;
+    .descricaoCampanha{
+        width:92%;
+
+        padding:15px 0;
     }
 
-    .cardCampanha {
-        min-height: auto;
+    .descricaoCampanha p{
+        font-size:16px;
     }
 
-    .descricaoCampanha {
-        padding: 20px;
+    .cardsCampanha{
+        width:92%;
+
+        flex-direction:column;
+
+        padding-bottom:20px;
     }
 
-    .descricaoCampanha p {
-        font-size: 16px;
+    .cardCampanha{
+        min-height:auto;
+
+        padding:20px;
     }
 
-    .cardCampanha p {
-        font-size: 16px;
+    .cardCampanha p{
+        font-size:16px;
     }
 
 }

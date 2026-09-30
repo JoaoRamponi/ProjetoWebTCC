@@ -53,3 +53,9 @@ button {
 .espacoTresBr{
     height:3em;
 }
+
+a,
+a:visited{
+    color:inherit;
+    text-decoration:none;
+}
