@@ -65,6 +65,19 @@ body{
     height:auto;
 }
 
+.videoPrincipal {
+    width: 560px;
+    height: 315px;
+    margin: 40px auto;
+}
+
+.videoPrincipal video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
 @media(max-width:1000px){
 
     .paginaEspecialistas{
